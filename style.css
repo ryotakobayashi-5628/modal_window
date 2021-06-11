@@ -1,0 +1,46 @@
+body{
+  font-size: 14px;
+}
+
+#open,#close{
+  width: 200px;
+  height: 40px;
+  padding: 5px 20px;
+  border: 1px #ccc solid;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 5px;
+  margin: 15px auto;
+  cursor: pointer;
+}
+#mask{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  opacity: 0.6;
+}
+#modal{
+  background-color: white;
+  width: 300px;
+  padding: 20px;
+  border-radius: 4px;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transition: 1s;
+}
+#modal > p{
+  margin-bottom: 30px;
+}
+#mask.hidden{
+  display: none;
+  transition: 1s;
+}
+#modal.hidden{
+  transform: translateY(-300px);
+}
